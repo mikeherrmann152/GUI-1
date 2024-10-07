@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Multiplication Table</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link href="style.css" type="text/css"
+          rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header for the page -->
+        <h1>Dynamic Multiplication Table</h1>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- Set form method to prevent submit from refreshing -->
+                <!-- Getting the input from the user -->
+                <form id="inputForm" action="" method="GET">
+
+                    <!-- Getting the x bounds from the user -->
+                    <p>Please enter an integer between -500 and 500 for horizontal axis bounds, order does not matter:</p>
+                    <input type="number" name="rowFirst" id="row-first"><br>
+                    <input type="number" name="rowLast" id="row-last"><br>
+
+                    <!-- Getting the y bounds from the user -->
+                    <p>Please enter an integer between -500 and 500 for vertical axis bounds, order does not matter:</p>
+                    <input type="number" name="colFirst" id="col-first"><br>
+                    <input type="number" name="colLast" id="col-last"><br>
+                    <button onclick="generateTable(); return false">Generate</button>
+                </form>
+                <br>
+            </div>
+
+            <div class="col-sm-6">
+                <p id="scrollWords">Once table is generated, scroll horizontally by clicking and dragging or using the scroll bar in the bottom of the table </p>
+                <!-- Placeholder for table, uses bootstrap classes-->
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                    </table>
+                </div>
+            </div>
+
+        </div> 
+
+        <!-- Scripts used -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="jav.js"></script>
+
+    </div>
+</body>
+</html>

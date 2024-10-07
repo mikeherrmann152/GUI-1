@@ -1,0 +1,127 @@
+
+/* changing the background color and the position of the text */
+body {
+    text-align: center;
+    background-color: powderblue;
+}
+
+/* styling the input labels */
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* styling for the input section */
+#forumButton {
+    background-color: lightcoral;
+    width: 40%;
+    margin: auto;
+}
+
+/* styling the "heading" of the input section */
+h1 {
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+/* some styling to the buttons */
+button {
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+/* styling table to be readable and scrollable with large tables */
+.tContainer {
+    max-height: 600px;
+    max-width: 80%;
+    overflow: scroll;
+    margin: auto;
+    background-color: white;
+}
+
+/* TABLE CSS */
+/* making first row black which is the guide values */
+#mtRow:first-child {
+    background-color: black;
+    color: white;
+}
+
+/* making first cell white*/
+#mtCell:first-child {
+    background-color: white;
+}
+
+/* making first column black which is the guide values */
+#mtCellC {
+    background-color: black;
+    color: white;
+}
+
+/* all evens to be lightgrey for readablility which ends up as every other column */
+#mtCellG:nth-child(odd) {
+    background-color: lightgrey;
+}
+/*TABLE CSS DONE*/
+
+/* setting the css of the label's messages to be clear and obvious that it is an error message */
+label.error {
+    display: block;
+    background-color: white;
+    color: red;
+    margin: 0px;
+    border-style: groove;
+    border-color: red;
+    padding: 1px;
+}
+
+/* giving each input box a margin to look cleaner especially when error messages are printed */
+#minRow {
+    margin: 0px;
+}
+
+#maxRow {
+    margin: 0px;
+}
+
+#minColumn {
+    margin: 0px;
+}
+
+#maxColumn {
+    margin: 0px;
+}
+
+/* SLIDEDR CSS */
+#sliderMinR {
+    margin-top: 7px;
+    margin-bottom: 4px;
+}
+
+#sliderMaxR {
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+#sliderMinC {
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+#sliderMaxC {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/* Just some Margins on submit buttonto look nicer */
+#newTabButton {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+#deleteTabButton {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+/* SLIDER CSS DONE */

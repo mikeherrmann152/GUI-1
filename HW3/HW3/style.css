@@ -1,0 +1,102 @@
+th, thead {
+    border: 2px solid white;
+    color: white;
+    background: black;
+}
+
+/* Words above the table to see them better */
+#scrollWords{
+    color: black;
+    font-weight: bold;
+}
+
+/* Next 3 generate the white checkered look on the table and borders between elements */
+tr:nth-child(2n) td:nth-child(2n+1) {
+    border: 2px solid black;
+    background: white;
+}
+
+tr:nth-child(2n+1) td:nth-child(2n) {
+    border: 2px solid black;
+    background: white;
+}
+
+td {
+    border: 2px solid black;
+}
+
+/* Modify the jQuery validator's error class that gets automatically generated */
+.error {
+    color: red;
+    display: block;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+/* Border for the heading of the page */
+h1 {
+    border: 3px ridge black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Setting the padding for the forms */
+#row-first, #row-last, #col-first, #col-last {
+    padding-top: 10px;
+}
+
+/* The directions for the user to follow */
+#inputForm {
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Format input forms to give spacing and round borders and numbers in the middle of input */
+input {
+    border-radius: 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Background for the page itself with an image */
+body {
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Color for the header of the page */
+.container {
+    color: black;
+}
+
+/* Making the table responsive */
+.table-responsive {
+    max-width: 600px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+    .table-responsive::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+        .table-responsive::-webkit-scrollbar:vertical {
+            width: 12px;
+        }
+
+        .table-responsive::-webkit-scrollbar:horizontal {
+            height: 12px;
+        }
+
+    .table-responsive::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+    }
+
+    .table-responsive::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #ffffff;
+    }

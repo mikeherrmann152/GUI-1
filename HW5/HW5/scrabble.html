@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scrabble</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="scrabble.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Simple Scrabble</h1>
+        </header>
+        <nav></nav>
+        <div class="line"></div>
+        <main>
+            
+            <div id="scoreboard">
+                <!-- Contains information about the player's score -->
+                <span id="word">Word: </span>
+                <span id="score">Score: </span>
+                <span id="remainingTiles">Remaining Tiles: </span>
+                <span id="highestScore">Highest Score: </span>
+            </div>
+            <!-- Scrabble board is inserted here -->
+            <div id="board"></div>
+            <!-- Tiles are added to the rack -->
+            <div id="rack" class="droppable"></div>
+            <!-- Game interaction buttons -->
+            <div id="buttonBox">
+                <input type="button" id="nextWord" value="Next Word" />
+                <input type="button" id="reset" value="Start Over" />
+            </div>
+        </main>
+        
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="scrabble.js"></script>
+    </div>
+</body>
+
+</html>

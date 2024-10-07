@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <title>Dynamic Multiplcation Table</title>
+</head>
+
+<body>
+    <!-- Div to hold my Forum and buttom to submit -->
+    <div id=forumButton>
+        <h1>Dynamic Multiplcation Table</h1>
+        <!-- // Trick to prevent page refresh https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit
+        -->
+        <form id="forumInput">
+            <!-- For Row --> <!-- Min Row -->
+            <br><label for="Enter Minumum Row Value"> Minimum-Row Value: </label>
+            <input type="number" id="minRow" name="minimumRow" required /><br>
+
+            <div id="sliderMinR">
+
+            </div>
+            <!-- MAX Row -->
+            <br><label for="Enter Maximum Row Value"> Maximum-Row Value: </label>
+            <input type="number" id="maxRow" name="maximumRow" required /><br>
+            <div id="sliderMaxR">
+            </div>
+
+            <!-- For Column --> <!-- Min Column -->
+            <br><label for="Enter Minumum Column Value"> Minimum-Column Value: </label>
+            <input type="number" id="minColumn" name="minimumColumn" required /><br>
+            <div id="sliderMinC">
+            </div>
+            <!-- Max Column -->
+            <br><label for="Enter Maximum Column Value"> Maximum-Column Value: </label>
+            <input type="number" id="maxColumn" name="maximumColumn" required /><br><br>
+            <div id="sliderMaxC"></div>
+        </form>
+
+        <!--  Buttons added for my New Tab and Deletab functions-->
+        <button type="button" id="newTabButton">New Tab</button>
+        <button type="button" id="deleteTabButton">Delete Tab</button>
+        <!-- div for tabs fucntinality  -->
+        <div id="myTabs">
+            <ul>
+            </ul>
+        </div> <!-- myTabs div end -->
+
+    </div><!-- Formbutton Div-->
+    <!-- the now included jQuery CDNS, and my js file include -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="java/jav.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+</body>
+</html>

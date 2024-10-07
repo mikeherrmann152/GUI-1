@@ -1,0 +1,94 @@
+*{
+    background-color:lightgray;
+    margin:auto;
+}
+
+#main_header{
+    background-color:black;
+    color:white;
+    font-size: 50px;
+    text-align:center;
+    
+}
+
+.navbar ul{
+    padding:0;
+    list-style:none;
+    font-size: 25px;
+}
+
+.navbar li{
+    display:inline;
+}
+
+.navbar a{
+    background-color:grey;
+    text-decoration:none;
+    color:black;
+    float:left;
+    width:33.333%;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+.textblock{
+    font-size:20px;
+    margin-top:3em;
+    margin-bottom:3em;
+}
+
+#school_table{
+    font-size:20px;
+}
+
+.go_home_button{
+    margin-top:1.5em;
+       
+}
+
+.mom_dad{
+    text-align:center;
+    width:80%;
+    margin-bottom: 2em;
+    font-size: 18px;
+    border:5px gray solid;
+
+}
+
+.sister {
+    text-align:center;
+    width: 80%;
+    
+    font-size: 18px;
+    border:5px gray solid;
+}
+
+.p1 {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2em;
+    font-size: 18px;
+    border: 5px gray solid;
+}
+
+.p2 {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2em;
+    font-size: 18px;
+    border: 5px gray solid;
+}
+
+.p3 {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2em;
+    font-size: 18px;
+    border: 5px gray solid;
+}
+
+#main_footer{
+    text-align: center;
+}

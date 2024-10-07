@@ -1,0 +1,44 @@
+#scoreboard {
+    margin: 30px 10% 10px 10%;
+    text-align: center;
+}
+
+    #scoreboard span {
+        margin: 0px 25px;
+    }
+
+#board {
+    margin: 10px auto;
+    width: 595px;
+    height: 91px;
+}
+
+.boardSlot {
+    margin: 1px;
+    width: 81px;
+    height: 87px;
+    border: 1px solid black;
+    float: left;
+}
+
+#rack {
+    margin: 10px auto;
+    width: 640px;
+    height: 136px;
+    background-image: url("images/scrabble-tile-holder-406774_640.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+img.draggable {
+    margin: 2px;
+    width: 79px;
+    height: 85px;
+    float: right;
+    border:1px solid black;
+}
+
+#buttonBox {
+    margin: 10px auto;
+    text-align: center;
+}
